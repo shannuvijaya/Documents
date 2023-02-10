@@ -1,0 +1,3 @@
+Kubernetes is an open-source container management (orchestration) tool. Its container management responsibilities include container deployment, scaling & descaling of containers & container load balancing.
+
+Note: Kubernetes is not a containerization platform. It is a multi-container management solution.
