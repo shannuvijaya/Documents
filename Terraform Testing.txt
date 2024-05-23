@@ -1,1 +1,7 @@
 https://www.hashicorp.com/blog/testing-hashicorp-terraform
+
+satestblobconnectivity01
+
+YjgFvDMG7dLUi4w/on8ls+zGlgDPw+YThabksU1ELhyRSZENqVNcdshv7cuTdl7YOMhJhWNuq3sT+AStMnoD2g==
+
+DefaultEndpointsProtocol=https;AccountName=satestblobconnectivity01;AccountKey=YjgFvDMG7dLUi4w/on8ls+zGlgDPw+YThabksU1ELhyRSZENqVNcdshv7cuTdl7YOMhJhWNuq3sT+AStMnoD2g==;EndpointSuffix=core.windows.net
