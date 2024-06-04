@@ -5,3 +5,33 @@ satestblobconnectivity01
 YjgFvDMG7dLUi4w/on8ls+zGlgDPw+YThabksU1ELhyRSZENqVNcdshv7cuTdl7YOMhJhWNuq3sT+AStMnoD2g==
 
 DefaultEndpointsProtocol=https;AccountName=satestblobconnectivity01;AccountKey=YjgFvDMG7dLUi4w/on8ls+zGlgDPw+YThabksU1ELhyRSZENqVNcdshv7cuTdl7YOMhJhWNuq3sT+AStMnoD2g==;EndpointSuffix=core.windows.net
+
+
+=========================
+
+-----List
+
+curl -i \
+ -H \
+ "x-ms-version: 2019-12-12" "https://satestblobconnectivity01.blob.core.windows.net/myblob3?restype=container&comp=list&sv=2022-11-02&ss=bfqt&srt=c&sp=rwdlacupiytfx&se=2024-06-04T15:50:53Z&st=2024-06-04T07:50:53Z&spr=https&sig=OauxVdx%2Bz%2BzVw5mIPPaDvIq2%2BIp%2F6fdCU5xsf5oWwqU%3D"
+
+---put
+
+
+curl -i -X PUT -H "x-ms-version: 2017-11-09" -H "x-ms-date: 04 Jun 2024 15:33:34" -H "x-ms-blob-type: AppendBlob" -H "Content-Length: 0"  "https://satestblobconnectivity01.blob.core.windows.net/myblob3?sp=racwdli&st=2024-06-04T12:01:16Z&se=2024-06-04T20:01:16Z&spr=https&sv=2022-11-02&sr=c&sig=Pw8ius6%2BhEZyZQpb%2B5Fgz6%2FI72%2FKTNGR38eeRXY1vGM%3D"
+
+
+curl -i -X PUT -H "x-ms-version: 2017-11-09" -H "x-ms-date: 04 Jun 2024 15:33:34" -H "x-ms-blob-type: AppendBlob" -H "Content-Length: 0"  "https://satestblobconnectivity01.blob.core.windows.net/myblob3?sp=racwdli&st=2024-06-04T12:27:04Z&se=2024-06-04T20:27:04Z&spr=https&sv=2022-11-02&sr=c&sig=jIBJE7h1DYqJDLbI2aWONYwXq3T3NjM7%2Bh40TWeDZqc%3D"
+
+
+#/bin/bash
+DATE=$(date -u "+%a, %d %b %Y %T GMT")
+BLOBPATH="/folder/yetanotherfolder/image.jpg"
+STORAGEACCOUNTNAME="your-storage-accountName"
+echo $DATE
+SIG=$(perl getSignature.pl "$DATE" "$STORAGEACCOUNTNAME" "$BLOBPATH")
+echo $SIG
+## See headers and response in case of errors
+curl -v -H "Authorization: SharedKey $STORAGEACCOUNTNAME:$SIG" -H "x-ms-date: $DATE" -H "x-ms-version: 2015-02-21" https://$STORAGEACCOUNTNAME.blob.core.windows.net$BLOBPATH
+##Download to file
+#curl -H "Authorization: SharedKey $STORAGEACCOUNTNAME:$SIG" -H "x-ms-date: $DATE" -H "x-ms-version: 2015-02-21" https://$STORAGEACCOUNTNAME.blob.core.windows.net$BLOBPATH -o out.jpg
