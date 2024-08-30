@@ -35,3 +35,28 @@ echo $SIG
 curl -v -H "Authorization: SharedKey $STORAGEACCOUNTNAME:$SIG" -H "x-ms-date: $DATE" -H "x-ms-version: 2015-02-21" https://$STORAGEACCOUNTNAME.blob.core.windows.net$BLOBPATH
 ##Download to file
 #curl -H "Authorization: SharedKey $STORAGEACCOUNTNAME:$SIG" -H "x-ms-date: $DATE" -H "x-ms-version: 2015-02-21" https://$STORAGEACCOUNTNAME.blob.core.windows.net$BLOBPATH -o out.jpg
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+please find my Azure Cloud DWH experience work i did after completing my training . I am still doing snowflake vs azure synapse  poc. 
+
+I fully understand and can demonstrate data virtualization with almost  no ETL code and very less transformation and also under stand lot of scheduling tools for orchestration of ETL  and SQL code . here are my some of task for my Azure Synapse ,ADF ,Data /Delta lake  and Purview POC.
+
+
+Created a PoC project that involved migrating a legacy data warehouse to Azure Synapse Analytics, to show reduce number for ETL code , scheduling and Query processing.
+
+Demonstrated proficiency in designing and implementing data solutions using Azure Synapse Analytics, Azure Data Factory, Azure Data Lake Storage, and Azure SQL Database, optimizing performance and scalability for data processing.
+
+Implemented Azure Purview for data cataloging and governance in a PoC project, establishing data lineage, enhancing data discovery, and ensuring compliance with data governance policies.
+
+Developed and optimized ETL pipelines using Azure Data Factory, integrating data from  sources on-premises SQL Server, cloud-based APIs and Parque files support analytics and reporting requirements.
+
+Created robust data models and architecture designs for a PoC that enabled efficient data storage, retrieval, and analytics, employing techniques such as dimensional modelling and star schema.
+
+Implemented automated data workflows and monitoring solutions using Azure Monitor, enhancing operational efficiency and ensuring the reliability and accuracy of data pipelines.
+
+Coordinated with cross-functional teams and stakeholders to define requirements, present PoC results, and gather feedback,
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
